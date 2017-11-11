@@ -5,15 +5,15 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color_brand_main;
 
 	&:visited {
-		color: $color__link-visited;
+		color: $color_brand_main;
 	}
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color_main_hover;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -146,10 +146,15 @@ a {
 
 .site-header {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
 	position: fixed;
 	background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%,
 	rgba(255, 255, 255, 0.8)
 	);
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 60vw;
+	margin: 0 auto;
 }
