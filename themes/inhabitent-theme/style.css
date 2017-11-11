@@ -493,6 +493,24 @@ a {
   text-align: right;
   width: 50%; }
 
+.menu-header-container ul li a {
+  padding: 15px; }
+
+.main-navigation {
+  max-width: 325px; }
+
+.site-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.979)), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%, rgba(255, 255, 255, 0.8)); }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
