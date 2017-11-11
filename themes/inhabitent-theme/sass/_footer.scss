@@ -1,0 +1,26 @@
+.site-footer {
+  background: url('../../images/dark-wood.png');
+  height: 350px;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+i {
+  padding-right: 5px;
+}
+
+.social-icons{
+  i{
+    padding-right: 10px;
+  }
+}

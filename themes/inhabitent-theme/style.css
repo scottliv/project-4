@@ -283,6 +283,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.bold {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -505,15 +508,13 @@ a {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.979)), to(rgba(255, 255, 255, 0.8)));
   background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%, rgba(255, 255, 255, 0.8)); }
 
-.container {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 60vw;
-  margin: 0 auto; }
+          justify-content: space-between; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -547,31 +548,11 @@ a {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
+# Containers
 --------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
+.container {
+  width: 60vw;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -691,3 +672,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-footer {
+  background: url("../../images/dark-wood.png");
+  height: 350px;
+  color: #fff; }
+  .site-footer a {
+    text-decoration: none;
+    color: #fff; }
+  .site-footer a:hover {
+    text-decoration: underline; }
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+i {
+  padding-right: 5px; }
+
+.social-icons i {
+  padding-right: 10px; }

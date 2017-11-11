@@ -31,32 +31,11 @@
 }
 
 /*--------------------------------------------------------------
-# Alignments
+# Containers
 --------------------------------------------------------------*/
-
-.alignleft {
-	display: inline;
-	float: left;
-	margin-right: $base__space-unit;
+.container {
+	width: 60vw;
+	margin: 0 auto;
 }
 
-.alignright {
-	display: inline;
-	float: right;
-	margin-left: $base__space-unit;
-}
 
-.aligncenter {
-	clear: both;
-	@include center-block;
-}
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-
-.clearfix {
-	clear: both;
-	content: "";
-	display: table;
-}
