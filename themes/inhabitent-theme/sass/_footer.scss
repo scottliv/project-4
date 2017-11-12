@@ -14,7 +14,23 @@
   display: flex;
   justify-content: space-between;
 }
+.footer-content-container {
+  padding: 30px 30px 30px 0;
+}
 
+.footer-image-container {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-image {
+  margin: 1em 0;
+  background: url("../../images/inhabitent-logo-text.svg") no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 300px;
+}
 i {
   padding-right: 5px;
 }

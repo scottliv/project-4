@@ -12,7 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="container footer-container">
 
-					<div class="contact">
+					<div class="contact footer-content-container">
 						<h3 class="footer-heading">Contact Info</h3>
 						<p>
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -29,15 +29,15 @@
 						</p>
 					</div>
 
-					<div class="hours">
+					<div class="hours footer-content-container">
 						<h3 class="footer-heading">Business Hours</h3>
 						<p><span class="bold">Monday-Friday:</span> 9am to 5pm</p>
 						<p><span class="bold">Saturday:</span> 10am to 2pm</p>
 						<p><span class="bold">Sunday:</span> Closed</p>
 					</div>
-
-					<div class="footer-image">
-						<img src="./images/inhabitent-logo-text.svg" alt="Inhabitent">
+					<div class="footer-image-container footer-content-container">
+						<div class="footer-image">
+						</div>
 					</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
