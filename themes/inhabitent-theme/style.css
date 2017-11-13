@@ -727,6 +727,34 @@ object {
 .shop-category {
   width: 23%; }
 
+.do-icon {
+  background: url("../../images/do.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.eat-icon {
+  background: url("../../images/eat.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.sleep-icon {
+  background: url("../../images/sleep.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.wear-icon {
+  background: url("../../images/wear.svg");
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
 /* Pages with sidebar area */
 body:not(.home) .site-content {
   display: -webkit-box;

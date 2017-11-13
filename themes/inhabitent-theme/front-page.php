@@ -18,25 +18,29 @@ get_header(); ?>
 			<h3>Shop Stuff</h3>
 				<div class="home-shop-flex-wrapper">	
 					<div class="shop-category">
-						<img src="./images/do.svg" alt="do">
+						<!-- <img src="./images/do.svg" alt="do"> -->
+						<div class="do-icon"></div>
 						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 						<button class="capitalize home-shop-button">Do Stuff</button>
 					</div>
 
 					<div class="shop-category">
-						<img src="./images/eat.svg" alt="eat">
+						<!-- <img src="./images/eat.svg" alt="eat"> -->
+						<div class="eat-icon"></div>
 						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats</p>
 						<button class="capitalize home-shop-button">Eat Stuff</button>
 					</div>
 
 					<div class="shop-category">
-						<img src="./images/sleep.svg" alt="sleep">
+						<!-- <img src="./images/sleep.svg" alt="sleep"> -->
+						<div class="sleep-icon"></div>
 						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
 						<button class="capitalize home-shop-button">Sleep Stuff</button>
 					</div>
 
 					<div class="shop-category">
-						<img src="./images/wear.svg" alt="wear">
+						<!-- <img src="./images/wear.svg" alt="wear"> -->
+						<div class="wear-icon"></div>
 						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
 						<button class="capitalize home-shop-button">Wear Stuff</button>
 					</div>

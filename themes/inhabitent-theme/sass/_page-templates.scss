@@ -25,6 +25,26 @@
   width: 23%;
 }
 
+.do-icon {
+  background: url('../../images/do.svg');
+  @include shop-icon;
+}
+
+.eat-icon{
+  background: url('../../images/eat.svg');    
+  @include shop-icon;
+}
+
+.sleep-icon {
+  background: url('../../images/sleep.svg');
+   @include shop-icon;
+}
+
+.wear-icon {
+  background: url('../../images/wear.svg');
+   @include shop-icon;
+}
+
 /* Pages with sidebar area */
 body:not(.home) .site-content{
   display: flex;
