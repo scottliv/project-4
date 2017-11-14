@@ -821,6 +821,7 @@ body:not(.home) .content-area {
 .widget-area {
   width: 30%; }
 
+/* About Page */
 .site-footer {
   background: url("../../images/dark-wood.png");
   height: 350px;
