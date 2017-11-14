@@ -15,7 +15,7 @@ get_header(); ?>
 
 		<section class="home-shop container centered">
 
-			<h3>Shop Stuff</h3>
+			<h2 class="section-header">Shop Stuff</h2>
 				<div class="home-shop-flex-wrapper">	
 					<div class="shop-category">
 						<!-- <img src="./images/do.svg" alt="do"> -->
@@ -48,7 +48,7 @@ get_header(); ?>
 			</section>
 
 		<section class="home-journal container centered">
-			<h3>Inhabitent Journal</h3>
+			<h2 class="section-header">Inhabitent Journal</h2>
 
 			<div class="home-journal-flex-wrapper">
 				
@@ -79,7 +79,7 @@ get_header(); ?>
 		</section>
 
 			<section class="home-adventures container centered">
-			<h3>Latest Adventures</h3>
+			<h2 class="section-header">Latest Adventures</h2>
 		</section>
 		
 	

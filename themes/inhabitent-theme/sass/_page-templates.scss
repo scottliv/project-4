@@ -22,7 +22,10 @@
 }
 
 .shop-category {
+  @include solid-border;
+  border-top-width: 5px;
   width: 23%;
+  padding: $base__space-unit;
 }
 
 .do-icon {

@@ -14,9 +14,12 @@ textarea {
 }
 
 /* Headings */
-
-h1, h2, h3, h4, h5, h6 {
-	clear: both;
+body{
+	h1, h2, h3, h4, h5, h6 {
+		clear: both;
+		font-family: 'novecento-sans';
+		font-weight: normal;
+	}
 }
 
 /* Copy */
@@ -81,4 +84,12 @@ body {
 
 .capitalize {
 	text-transform: uppercase;
+}
+
+.section-header {
+	font-size: 2.5em;
+}
+
+.header-container {
+	font-family: 'novecento-sans';
 }
