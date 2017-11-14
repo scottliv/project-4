@@ -88,8 +88,20 @@ body {
 
 .section-header {
 	font-size: 2.5em;
+	margin: 2 * $base__space-unit 0;
 }
 
 .header-container {
 	font-family: 'novecento-sans';
+}
+
+.entry-title {
+	a {
+		text-decoration: none;
+	}
+}
+
+.footer-heading {
+	font-weight: bold;
+	color: #d99054;
 }

@@ -341,10 +341,18 @@ body {
   text-transform: uppercase; }
 
 .section-header {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  margin: 3rem 0; }
 
 .header-container {
   font-family: 'novecento-sans'; }
+
+.entry-title a {
+  text-decoration: none; }
+
+.footer-heading {
+  font-weight: bold;
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -779,6 +787,9 @@ object {
   width: 50px;
   height: 50px;
   margin: 0 auto; }
+
+.home-journal-title-wrapper {
+  border: 1px solid #e1e1e1; }
 
 .home-journal-flex-wrapper {
   display: -webkit-box;

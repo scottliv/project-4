@@ -48,6 +48,9 @@
    @include shop-icon;
 }
 
+.home-journal-title-wrapper{
+  @include solid-border;
+}
 .home-journal-flex-wrapper {
   display: flex;
   justify-content: space-between;
