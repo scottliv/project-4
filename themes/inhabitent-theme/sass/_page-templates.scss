@@ -45,6 +45,23 @@
    @include shop-icon;
 }
 
+.home-journal-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  article {
+    width: 32%;
+    text-align: left;
+
+    .home-journal-image-wrapper{
+      width: 100%;
+      height: 13vw;
+      overflow: hidden;
+    }
+
+  }
+}
+
 /* Pages with sidebar area */
 body:not(.home) .site-content{
   display: flex;
