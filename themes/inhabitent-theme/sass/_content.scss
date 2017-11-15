@@ -50,24 +50,30 @@
 
 /* Blog Articles */
 
-article.type-post .entry-header{
-	position: relative;
-}
+body.blog, body.single-post { 
 
-body.blog {
-	.entry-title {
-		background: $color_brand_main;
-		position: absolute;
-		top: 1.875em;
-	 	a {	
-			color: #fff;
+article.type-post {
+	
+		.entry-header{
+			position: relative;
+			min-width: 640px;
 		}
 	}
-	.entry-meta {
+}
+
+
+body.blog, body.single-post {
+	.entry-title {
+		width: 500px;
 		background: $color_brand_main;
-		color: #fff;
 		position: absolute;
-		top: 25em;
+		top: 1.75em;
+	}
+	.entry-meta{
+		background: $color_brand_main;
+		font-family: 'novecento-sans';
+		position: absolute;
+		bottom: 0.375em;
 		right: 2em;
 	}
 }

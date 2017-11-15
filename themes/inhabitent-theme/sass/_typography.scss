@@ -106,3 +106,17 @@ body {
 	font-weight: bold;
 	color: #d99054;
 }
+
+body.blog, body.single-post {
+	.entry-title {
+		a, h1 {
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #fff;
+		}
+		.entry-meta {
+			color: #fff;
+
+		}
+	}
+}
