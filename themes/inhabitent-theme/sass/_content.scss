@@ -50,7 +50,7 @@
 
 /* Blog Articles */
 
-body.blog, body.single-post { 
+body.blog, body.single-post, body.archive { 
 
 article.type-post {
 	
@@ -62,18 +62,33 @@ article.type-post {
 }
 
 
-body.blog, body.single-post {
+body.blog, body.single-post, body.archive {
+
+	h1 {
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.75em;
+	}
 	.entry-title {
 		width: 500px;
 		background: $color_brand_main;
 		position: absolute;
 		top: 1.75em;
+			a {
+				color: #fff;
+				font-weight: bold;
+				font-size: 1.75rem;
+			}
 	}
 	.entry-meta{
 		background: $color_brand_main;
 		font-family: 'novecento-sans';
+		color: #fff;
 		position: absolute;
 		bottom: 0.375em;
 		right: 2em;
+		a{
+			color: #fff;
+		}
 	}
 }

@@ -35,7 +35,7 @@
 						<p><span class="bold">Saturday:</span> 10am to 2pm</p>
 						<p><span class="bold">Sunday:</span> Closed</p>
 					</div>
-					<div class="footer-image-container footer-content-container">
+					<div class="footer-image-container">
 						<div class="footer-image">
 						</div>
 					</div>

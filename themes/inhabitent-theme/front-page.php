@@ -16,36 +16,29 @@ get_header(); ?>
 		<section class="home-shop container centered">
 
 			<h2 class="section-header">Shop Stuff</h2>
-				<div class="home-shop-flex-wrapper">	
-					<div class="shop-category">
-						<!-- <img src="./images/do.svg" alt="do"> -->
-						<div class="do-icon"></div>
-						<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-						<button class="capitalize home-shop-button">Do Stuff</button>
-					</div>
+			<?php
+				$terms = get_terms( array(
+					'taxonomy' => 'product-type',
+					'hide_empty' => 0,
+				));
+				if ( ! empty( $terms ) ** ! is_wp_error( $terms)):
+					?>
+						<div class="home-shop-flex-wrapper">	
 
-					<div class="shop-category">
-						<!-- <img src="./images/eat.svg" alt="eat"> -->
-						<div class="eat-icon"></div>
-						<p>Nothing beats food cooked over a fire. We have all you need for good camping eats</p>
-						<button class="capitalize home-shop-button">Eat Stuff</button>
-					</div>
+							<?php foreach ($terms as $term) : ?>
 
-					<div class="shop-category">
-						<!-- <img src="./images/sleep.svg" alt="sleep"> -->
-						<div class="sleep-icon"></div>
-						<p>Get a good night's rest in the wild in a home away from home that travels well.</p>
-						<button class="capitalize home-shop-button">Sleep Stuff</button>
-					</div>
+								<div class="product-type-block-wrapper">
+									<img src="<?php echo get_template_directory_uri().'/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name ; ?>" />
+									<p><?php echo $term->description; ?></p>
+									<p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a> </p>
+								</div>
+							<?php endforeach; ?>
+						</div>
+				<?php endif ?>
 
-					<div class="shop-category">
-						<!-- <img src="./images/wear.svg" alt="wear"> -->
-						<div class="wear-icon"></div>
-						<p>From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-						<button class="capitalize home-shop-button">Wear Stuff</button>
-					</div>
-				</div>
 			</section>
+
+			
 
 		<section class="home-journal container centered">
 			<h2 class="section-header">Inhabitent Journal</h2>
@@ -61,7 +54,7 @@ get_header(); ?>
 							</header>
 						<?php endif; ?>
 
-						<?php /* Start the Loop */ ?>
+					
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
 							<?php get_template_part( 'template-parts/content-home-journal' ); ?>
@@ -69,12 +62,14 @@ get_header(); ?>
 						<?php endwhile; ?>
 
 						<?php the_posts_navigation(); ?>
+						<?php wp_reset_postdata(); ?>
 
 					<?php else : ?>
 
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 					<?php endif; ?>
+
 			</div>
 		</section>
 

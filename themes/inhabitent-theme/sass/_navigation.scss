@@ -154,4 +154,24 @@ a {
 	display: flex;
 	justify-content: space-between;
 }
+
+/* Buttons */
+
+button {
+	border-radius: 0;
+	background: $color_brand_main;
+	color: #fff;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.button-home-read-more {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	button {
+		background: #fff;
+		color: $color_brand_main;
+	}
+}
 	
