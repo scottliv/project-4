@@ -619,7 +619,8 @@ a {
 # Containers
 --------------------------------------------------------------*/
 .container {
-  width: 60vw;
+  width: 80vw;
+  max-width: 1120px;
   margin: 0 auto; }
 
 /*--------------------------------------------------------------
@@ -741,7 +742,8 @@ object {
   height: 100vh; }
 
 .home-hero-image {
-  background: url("../../images/home-hero.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/home-hero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("../../images/home-hero.jpg");
   background-size: cover;
   width: 100%;
   height: 100%; }
@@ -807,7 +809,7 @@ object {
       overflow: hidden; }
 
 /* Pages with sidebar area */
-body:not(.home) .site-content {
+body:not(.home):not(.page-template-about) .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,13 +817,18 @@ body:not(.home) .site-content {
   margin: 0 auto;
   padding-top: 50px; }
 
-body:not(.home) .content-area {
+body:not(.home):not(.page-template-about) .content-area {
   width: 70%; }
 
 .widget-area {
   width: 30%; }
 
 /* About Page */
+.page-template-about .entry-header {
+  color: #fff;
+  width: 100vw;
+  height: 100vh; }
+
 .site-footer {
   background: url("../../images/dark-wood.png");
   height: 350px;
