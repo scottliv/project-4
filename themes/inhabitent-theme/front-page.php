@@ -75,6 +75,34 @@ get_header(); ?>
 
 			<section class="home-adventures container centered">
 			<h2 class="section-header">Latest Adventures</h2>
+			<div class="home-journal-flex-wrapper">
+				
+				<?php $args = array( 'post_type' => 'adventure', 'posts_per_page' => 4 ); $query = new WP_Query( $args );?>
+
+					<?php if ( $query->have_posts() ) : ?>
+						<?php if ( is_home() && ! is_front_page() ) : ?>
+							<header>
+								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+							</header>
+						<?php endif; ?>
+
+					
+						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+							<?php get_template_part( 'template-parts/content-home-journal' ); ?>
+
+						<?php endwhile; ?>
+
+						<?php the_posts_navigation(); ?>
+						<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+
+						<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+					<?php endif; ?>
+
+			</div>
 		</section>
 		
 	
