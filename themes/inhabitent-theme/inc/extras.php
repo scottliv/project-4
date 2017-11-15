@@ -78,11 +78,11 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css');
 
 
 
-function remove_admin_login_header() {
-	if (! is_page_template('page-templates/about.php')){
-		return;
-	}
-	remove_action('wp_head', '_admin_bar_bump_cb');
-}
+// function remove_admin_login_header() {
+// 	if (! is_page_template('page-templates/about.php')){
+// 		return;
+// 	}
+// 	remove_action('wp_head', '_admin_bar_bump_cb');
+// }
 
-add_action('get_header', 'remove_admin_login_header');
+// add_action('get_header', 'remove_admin_login_header');

@@ -12,7 +12,7 @@ get_header(); ?>
 			<article id="<?php the_ID(); ?>" <?php post_class();?>>
 
 					<header class="entry-header custom-hero">
-						<div class="container">
+						<div class="container about-flex-wrapper">
 							<?php the_title( '<h1 class="entry-title">', '</h1>');?>
 						</div>
 					</header>

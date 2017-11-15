@@ -133,14 +133,16 @@ a {
 	
 .menu-header-container ul li a {
 	padding: 15px 0 15px 30px;
+	text-transform: uppercase;
 	
 }
 
 .main-navigation {
-	width: 335px;
+	width: 355px;
 }	
 
 .site-header {
+	z-index: 1000;
 	width: 100%;
 	position: fixed;
 	background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%,

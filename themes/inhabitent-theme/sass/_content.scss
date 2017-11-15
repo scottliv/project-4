@@ -47,3 +47,27 @@
 .bypostauthor {
 	display: block;
 }
+
+/* Blog Articles */
+
+article.type-post .entry-header{
+	position: relative;
+}
+
+body.blog {
+	.entry-title {
+		background: $color_brand_main;
+		position: absolute;
+		top: 1.875em;
+	 	a {	
+			color: #fff;
+		}
+	}
+	.entry-meta {
+		background: $color_brand_main;
+		color: #fff;
+		position: absolute;
+		top: 25em;
+		right: 2em;
+	}
+}

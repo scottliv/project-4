@@ -71,13 +71,14 @@
 /* Pages with sidebar area */
   body:not(.home):not(.page-template-about) .site-content{
   display: flex;
+  justify-content: space-between;
   max-width: 1120px;
   margin: 0 auto;
-  padding-top: 50px
+  padding-top: 50px;
 }
 
   body:not(.home):not(.page-template-about) .content-area {
-  width: 70%;
+  width: 60%;
 }
 
 .widget-area {
@@ -88,6 +89,21 @@
 
 .page-template-about .entry-header {
   color: #fff;
-  // width: 100vw;
+  height: 100vh;
+  .entry-title {
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+
+.about-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
+
+.page-template-about .entry-content h2 {
+  text-align: center;
+}
+

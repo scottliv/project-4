@@ -286,7 +286,8 @@ textarea {
 body h1, body h2, body h3, body h4, body h5, body h6 {
   clear: both;
   font-family: 'novecento-sans';
-  font-weight: normal; }
+  font-weight: normal;
+  text-transform: uppercase; }
 
 /* Copy */
 p {
@@ -565,12 +566,14 @@ a {
   width: 50%; }
 
 .menu-header-container ul li a {
-  padding: 15px 0 15px 30px; }
+  padding: 15px 0 15px 30px;
+  text-transform: uppercase; }
 
 .main-navigation {
-  width: 335px; }
+  width: 355px; }
 
 .site-header {
+  z-index: 1000;
   width: 100%;
   position: fixed;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.979)), to(rgba(255, 255, 255, 0.8)));
@@ -673,6 +676,24 @@ a {
 
 .bypostauthor {
   display: block; }
+
+/* Blog Articles */
+article.type-post .entry-header {
+  position: relative; }
+
+body.blog .entry-title {
+  background: #248a83;
+  position: absolute;
+  top: 1.875em; }
+  body.blog .entry-title a {
+    color: #fff; }
+
+body.blog .entry-meta {
+  background: #248a83;
+  color: #fff;
+  position: absolute;
+  top: 25em;
+  right: 2em; }
 
 /*--------------------------------------------------------------
 # Media
@@ -813,12 +834,15 @@ body:not(.home):not(.page-template-about) .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 1120px;
   margin: 0 auto;
   padding-top: 50px; }
 
 body:not(.home):not(.page-template-about) .content-area {
-  width: 70%; }
+  width: 60%; }
 
 .widget-area {
   width: 30%; }
@@ -826,8 +850,25 @@ body:not(.home):not(.page-template-about) .content-area {
 /* About Page */
 .page-template-about .entry-header {
   color: #fff;
-  width: 100vw;
   height: 100vh; }
+  .page-template-about .entry-header .entry-title {
+    font-size: 3em;
+    font-weight: bold; }
+
+.about-flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh; }
+
+.page-template-about .entry-content h2 {
+  text-align: center; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");
