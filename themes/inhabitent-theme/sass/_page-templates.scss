@@ -26,26 +26,10 @@
   border-top-width: 5px;
   width: 23%;
   padding: $base__space-unit;
-}
+    img {
+      width: 75px;
+    } 
 
-.do-icon {
-  background: url('../../images/do.svg');
-  @include shop-icon;
-}
-
-.eat-icon{
-  background: url('../../images/eat.svg');    
-  @include shop-icon;
-}
-
-.sleep-icon {
-  background: url('../../images/sleep.svg');
-   @include shop-icon;
-}
-
-.wear-icon {
-  background: url('../../images/wear.svg');
-   @include shop-icon;
 }
 
 .home-journal-title-wrapper{
