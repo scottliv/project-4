@@ -659,6 +659,11 @@ button {
   max-width: 1120px;
   margin: 0 auto; }
 
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -671,6 +676,10 @@ button {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+/* Contact Info */
+span.widget-text {
+  max-width: 100px; }
 
 /*--------------------------------------------------------------
 # Content
