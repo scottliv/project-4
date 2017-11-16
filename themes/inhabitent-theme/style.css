@@ -706,10 +706,15 @@ a {
 .main-navigation {
   width: 355px; }
 
+.header-logo {
+  height: 50px;
+  width: 50px; }
+
 .site-header {
   z-index: 1000;
   width: 100%;
   position: fixed;
+  height: 50px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.979)), to(rgba(255, 255, 255, 0.8)));
   background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%, rgba(255, 255, 255, 0.8)); }
 
