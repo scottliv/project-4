@@ -18,6 +18,25 @@
 
 /* Contact Info */
 
+.widget .contact-info-field {
+	display: flex;
+}
+
 span.widget-text {
-	max-width: 100px;
+	width: 60%;
+	padding-left: 1.75rem;
+}
+
+/* Business Hours */
+
+span.day-of-week {
+	font-weight: bold;
+}
+
+/* Archives */
+
+aside.widget.widget_archive ul {
+	list-style: none;
+	margin-left: none;
+	padding-left: none;
 }
