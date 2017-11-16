@@ -711,33 +711,33 @@ button {
   display: block; }
 
 /* Blog Articles */
-body.blog article.type-post .entry-header, body.single-post article.type-post .entry-header, body.archive article.type-post .entry-header {
+body.blog article.type-post .entry-header, body.single-post article.type-post .entry-header, body.archive:not(.tax-product-type) article.type-post .entry-header {
   position: relative;
   min-width: 640px; }
 
-body.blog h1, body.single-post h1, body.archive h1 {
+body.blog h1, body.single-post h1, body.archive:not(.tax-product-type) h1 {
   color: #fff;
   font-weight: bold;
   font-size: 1.75em; }
 
-body.blog .entry-title, body.single-post .entry-title, body.archive .entry-title {
+body.blog .entry-title, body.single-post .entry-title, body.archive:not(.tax-product-type) .entry-title {
   width: 500px;
   background: #248a83;
   position: absolute;
   top: 1.75em; }
-  body.blog .entry-title a, body.single-post .entry-title a, body.archive .entry-title a {
+  body.blog .entry-title a, body.single-post .entry-title a, body.archive:not(.tax-product-type) .entry-title a {
     color: #fff;
     font-weight: bold;
     font-size: 1.75rem; }
 
-body.blog .entry-meta, body.single-post .entry-meta, body.archive .entry-meta {
+body.blog .entry-meta, body.single-post .entry-meta, body.archive:not(.tax-product-type) .entry-meta {
   background: #248a83;
   font-family: 'novecento-sans';
   color: #fff;
   position: absolute;
   bottom: 0.375em;
   right: 2em; }
-  body.blog .entry-meta a, body.single-post .entry-meta a, body.archive .entry-meta a {
+  body.blog .entry-meta a, body.single-post .entry-meta a, body.archive:not(.tax-product-type) .entry-meta a {
     color: #fff; }
 
 /*--------------------------------------------------------------

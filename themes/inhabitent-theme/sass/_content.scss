@@ -50,7 +50,7 @@
 
 /* Blog Articles */
 
-body.blog, body.single-post, body.archive { 
+body.blog, body.single-post, body.archive:not(.tax-product-type) { 
 
 article.type-post {
 	
@@ -62,7 +62,7 @@ article.type-post {
 }
 
 
-body.blog, body.single-post, body.archive {
+body.blog, body.single-post, body.archive:not(.tax-product-type) {
 
 	h1 {
 		color: #fff;
