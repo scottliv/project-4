@@ -5,7 +5,7 @@
     e.stopPropagation();
     $('.search-input').toggleClass('show');
     setTimeout(function(){
-      $('.search-input').focus()}, 301);
+      $('.search-input').focus()}, 201);
     
 
     $(document).one('click', function closeSearch(e) {

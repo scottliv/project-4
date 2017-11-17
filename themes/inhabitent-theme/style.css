@@ -731,8 +731,8 @@ a {
       -ms-flex-align: center;
           align-items: center; }
   .search-bar form input {
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
     visibility: hidden;
     width: 0;
     border: none;
@@ -740,6 +740,12 @@ a {
     .search-bar form input.show {
       visibility: visible;
       width: 200%; }
+
+input.search-input:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .main-navigation {
   display: -webkit-box;
@@ -837,6 +843,11 @@ button {
     -webkit-box-shadow: none;
             box-shadow: none;
     background: transparent; }
+  .search-submit:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 1px dotted #000; }
 
 /*--------------------------------------------------------------
 # Accessibility

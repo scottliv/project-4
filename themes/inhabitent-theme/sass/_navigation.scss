@@ -148,7 +148,7 @@ a {
 	display: flex;
 	align-items: center;
 	form input{
-		transition: all 0.3s ease-in;
+		transition: all 0.2s ease-in;
 		visibility: hidden;
 		width: 0;
 		border: none;
@@ -158,6 +158,12 @@ a {
 			width: 200%;
 		}
 	}
+}
+
+input.search-input:focus{
+		outline: none;
+		border: none;
+		box-shadow: none;
 }
 
 .main-navigation {
@@ -223,6 +229,12 @@ button {
 	&:hover {
 		box-shadow: none;
 		background: transparent;
+	}
+	&:focus{
+			outline: none;
+			box-shadow: none;
+		border: 1px dotted #000;
+
 	}
 }
 	
