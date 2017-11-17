@@ -104,10 +104,13 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   height: 100vh;
 }
 
-.page-template-about .entry-content h2 {
-  text-align: center;
+.page-template-about .entry-content {
+  max-width: 800px;
+  margin: 3rem auto;
+  h2 {
+    text-align: center;
+  }
 }
-
 /* Product Archive */
 
 body.tax-product-type, body.post-type-archive-product{

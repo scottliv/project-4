@@ -460,6 +460,15 @@ big {
 body {
   font-family: 'merriweather', serif; }
 
+body.page-template-about h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1.5rem; }
+
+.find-us-header {
+  padding: 1.5rem 0;
+  font-size: 1.75rem; }
+
 .bold {
   font-weight: bold; }
 
@@ -787,6 +796,9 @@ input.search-input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+span.cat-links {
+  padding-right: 10px; }
 
 /* Buttons */
 a.btn {
@@ -1188,8 +1200,11 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
           align-items: center;
   height: 100vh; }
 
-.page-template-about .entry-content h2 {
-  text-align: center; }
+.page-template-about .entry-content {
+  max-width: 800px;
+  margin: 3rem auto; }
+  .page-template-about .entry-content h2 {
+    text-align: center; }
 
 /* Product Archive */
 body.tax-product-type .product-type-block-wrapper, body.post-type-archive-product .product-type-block-wrapper {
