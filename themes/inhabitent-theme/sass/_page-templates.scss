@@ -120,3 +120,23 @@ body.tax-product-type, body.post-type-archive-product{
   }
 }
 
+.dots {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+ 
+}
+
+.product-name, .product-price {
+  background: #fff;
+  z-index: 10;
+}
+
+.product-meta {
+  overflow: hidden;
+  flex-wrap: none;
+  display: flex;
+  justify-content: space-between;
+  // text-align: center;
+  padding: 10px;
+}

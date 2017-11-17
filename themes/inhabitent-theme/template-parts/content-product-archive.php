@@ -17,14 +17,17 @@
 			</div>
 		<?php endif; ?>
 
-		<p class="product-price border-solid"><?php the_title()  ?>.....<span class=“price-meta”>......<?php $meta_print_value=get_post_meta(get_the_ID(),'price',true); echo($meta_print_value); ?></span>
+		<div class="product-meta border-solid">
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="product-meta">
+			<div class="product-name"><?php the_title()  ?></div>
 			
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+			<div class="product-price"><?php $meta_print_value=get_post_meta(get_the_ID(),'price',true); echo($meta_print_value); ?></div>
+	
+			<div class="dots">..........................................................</div>
+	
+	</div>
+
+
 	</header><!-- .entry-header -->
 
 </article><!-- #post-## -->

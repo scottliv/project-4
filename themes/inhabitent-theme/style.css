@@ -498,9 +498,6 @@ body.home .home-journal-flex-wrapper .entry-title {
   font-size: 1.25rem;
   font-weight: bold; }
 
-.product-price {
-  text-align: center; }
-
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1091,6 +1088,27 @@ body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product
         max-height: 250px;
         max-width: none;
         width: auto; }
+
+.dots {
+  width: 100%;
+  z-index: -1;
+  position: absolute; }
+
+.product-name, .product-price {
+  background: #fff;
+  z-index: 10; }
+
+.product-meta {
+  overflow: hidden;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");
