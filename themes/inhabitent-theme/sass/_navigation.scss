@@ -148,6 +148,7 @@ a {
 	display: flex;
 	align-items: center;
 	form input{
+		transition: all 0.3s ease-in;
 		visibility: hidden;
 		width: 0;
 		border: none;
@@ -197,6 +198,7 @@ a.btn {
 
 button {
 	border-radius: 0;
+	text-transform: uppercase;
 	@include btn-main;
 }
 
@@ -205,8 +207,12 @@ button {
 	bottom: 15px;
 	left: 15px;
 	button {
-		@include btn-alt
+		@include btn-alt;
 	}
+}
+
+.btn-alt{
+	@include btn-alt;
 }
 
 .search-submit {
@@ -214,5 +220,9 @@ button {
 	background: transparent;
 	color: $color_brand_main;
 	order: -1;
+	&:hover {
+		box-shadow: none;
+		background: transparent;
+	}
 }
 	

@@ -52,9 +52,12 @@
 	background: transparent;
 	color: #000;
 	border: 1px solid #000;
+	padding: 0.75rem 2rem;
+	font-size: 1rem;
 	&:hover {
 		background: $color_brand_main;
 		color: #fff;
 		box-shadow: none; 
+		border-color: $color_brand_main;
 	}
 }

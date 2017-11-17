@@ -21,9 +21,9 @@
 		<?php the_content(); ?>
 		<?php
 		?>
-		<button class="product-social-button">Like</button>
-		<button class="product-social-button">Tweet</button>
-		<button class="product-social-button">Pin</button>
+		<button class="btn-alt"><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+		<button class="btn-alt"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+		<button class="btn-alt"><i class="fa fa-pinterest" aria-hidden="true"></i>Pin</button>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
