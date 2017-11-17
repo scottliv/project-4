@@ -22,20 +22,15 @@
 }
 
 .shop-category {
-  @include solid-border;
-  border-top-width: 5px;
   width: 23%;
   padding: $base__space-unit;
     img {
       width: 75px;
     } 
-
 }
 
 .home-journal-title-wrapper{
-  @include solid-border;
   position: relative;
-  border-top-width: 5px;
   height: 175px;
   padding: 15px;
 }
@@ -96,9 +91,32 @@
 
 /* Product Archive */
 
-body.tax-product-type{
+body.tax-product-type, body.post-type-archive-product{
   .product-type-flex-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80em;
+    max-width: 1120px;
+    
+    article.type-product{
+      flex-basis: 23%;
+      max-width: 23%;
+    
+      .product-image-wrapper {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vw;
+
+        img {
+          max-height: 250px;
+          max-width: none;
+          width: auto;
+        }
+      }
+    }
   }
 }
 

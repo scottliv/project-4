@@ -494,6 +494,13 @@ body.blog .entry-title .entry-meta, body.single-post .entry-title .entry-meta {
 body.home .home-journal-flex-wrapper .entry-meta {
   font-size: 0.75rem; }
 
+body.home .home-journal-flex-wrapper .entry-title {
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+.product-price {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -798,6 +805,10 @@ button {
   display: -ms-flexbox;
   display: flex; }
 
+.border-solid {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -982,17 +993,13 @@ object {
           justify-content: space-between; }
 
 .shop-category {
-  border: 1px solid #e1e1e1;
-  border-top-width: 5px;
   width: 23%;
   padding: 1.5rem; }
   .shop-category img {
     width: 75px; }
 
 .home-journal-title-wrapper {
-  border: 1px solid #e1e1e1;
   position: relative;
-  border-top-width: 5px;
   height: 175px;
   padding: 15px; }
 
@@ -1053,10 +1060,37 @@ body:not(.home):not(.page-template-about) .content-area {
   text-align: center; }
 
 /* Product Archive */
-body.tax-product-type .product-type-flex-wrapper {
+body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product .product-type-flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80em;
+  max-width: 1120px; }
+  body.tax-product-type .product-type-flex-wrapper article.type-product, body.post-type-archive-product .product-type-flex-wrapper article.type-product {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    max-width: 23%; }
+    body.tax-product-type .product-type-flex-wrapper article.type-product .product-image-wrapper, body.post-type-archive-product .product-type-flex-wrapper article.type-product .product-image-wrapper {
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      height: 15vw; }
+      body.tax-product-type .product-type-flex-wrapper article.type-product .product-image-wrapper img, body.post-type-archive-product .product-type-flex-wrapper article.type-product .product-image-wrapper img {
+        max-height: 250px;
+        max-width: none;
+        width: auto; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");

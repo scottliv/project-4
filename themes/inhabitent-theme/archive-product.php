@@ -28,7 +28,7 @@ get_header(); ?>
 
 			
 				<?php $args = array( 'post_type' => 'product', 'posts_per_page' => -1 ); $query = new WP_Query( $args );?>
-
+					<div class="product-type-flex-wrapper">
 					<?php if ( $query->have_posts() ) : ?>
 						<?php if ( is_home() && ! is_front_page() ) : ?>
 							<header>
@@ -50,7 +50,7 @@ get_header(); ?>
 						<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 					<?php endif; ?>
-
+				</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

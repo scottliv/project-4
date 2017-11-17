@@ -43,3 +43,10 @@
 .flex-wrapper {
 	display: flex;
 }
+
+
+// Borders
+
+.border-solid {
+	@include solid-border;
+}

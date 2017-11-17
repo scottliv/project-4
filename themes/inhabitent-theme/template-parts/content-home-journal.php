@@ -15,7 +15,7 @@
       </div>
 		<?php endif; ?>
 
-    <div class="home-journal-title-wrapper">
+    <div class="home-journal-title-wrapper border-solid">
 			
 	  	<?php if ( 'post' === get_post_type() ) : ?>  
 		    <div class="entry-meta">
