@@ -27,11 +27,16 @@
 						
 						<a href="<?php echo get_home_url()?>" class="home-link"><img class="header-logo" src="<?php echo get_template_directory_uri().'/images/inhabitent-logo-tent.svg'?>" /></a>
 					</div><!-- .site-branding -->
-
+					<div class="menu-container">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav><!-- #site-navigation -->
+					<div class="search-bar">
+							<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input class="search-input" type="text" name="s" id="search" placeholder="Type and hit enter to submit"></form>
+							<button class="search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</div>
 				</div>
 			</header><!-- #masthead -->
 

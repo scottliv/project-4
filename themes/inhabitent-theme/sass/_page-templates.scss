@@ -179,7 +179,11 @@ body.single-product {
     margin: 0;
     padding: 0 2rem;
   }
+  .single-product-title {
+    margin-top: 0;
+  }
   .single-product-price {
     padding-bottom: 1rem;
+    font-size: 1.5rem;
   }
 }

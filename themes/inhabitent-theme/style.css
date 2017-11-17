@@ -716,8 +716,38 @@ a {
   padding: 15px 0 15px 30px;
   text-transform: uppercase; }
 
+.menu-container {
+  width: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .search-bar form input {
+    visibility: hidden;
+    width: 0;
+    border: none;
+    background: transparent; }
+    .search-bar form input.show {
+      visibility: visible;
+      width: 200%; }
+
 .main-navigation {
-  width: 355px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .header-logo {
   height: 50px;
@@ -763,6 +793,14 @@ button {
   .button-home-read-more button {
     background: #fff;
     color: #248a83; }
+
+.search-submit {
+  border: none;
+  background: transparent;
+  color: #248a83;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1153,8 +1191,12 @@ body.single-product .entry-content {
   margin: 0;
   padding: 0 2rem; }
 
+body.single-product .single-product-title {
+  margin-top: 0; }
+
 body.single-product .single-product-price {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  font-size: 1.5rem; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");

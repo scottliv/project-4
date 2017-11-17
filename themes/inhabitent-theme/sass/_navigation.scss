@@ -130,6 +130,8 @@ a {
 		width: 50%;
 	}
 }
+
+
 	
 .menu-header-container ul li a {
 	padding: 15px 0 15px 30px;
@@ -137,8 +139,30 @@ a {
 	
 }
 
+.menu-container {
+	width: auto;
+	height: 50px;
+	display: flex;
+}
+.search-bar {
+	display: flex;
+	align-items: center;
+	form input{
+		visibility: hidden;
+		width: 0;
+		border: none;
+		background: transparent;
+		&.show {
+			visibility: visible;
+			width: 200%;
+		}
+	}
+}
+
 .main-navigation {
-	width: 355px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
 }	
 
 .header-logo {
@@ -188,5 +212,12 @@ button {
 		background: #fff;
 		color: $color_brand_main;
 	}
+}
+
+.search-submit {
+	border: none;
+	background: transparent;
+	color: $color_brand_main;
+	order: -1;
 }
 	
