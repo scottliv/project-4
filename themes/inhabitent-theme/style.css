@@ -473,7 +473,7 @@ body {
   font-size: 2.5em;
   margin: 3rem 0; }
 
-.header-container {
+.header-container, .single-product-price {
   font-family: 'novecento-sans'; }
 
 .entry-title a {
@@ -500,6 +500,9 @@ body.home .home-journal-flex-wrapper .entry-title {
 
 .page-title {
   color: #000; }
+
+h1.single-product-title {
+  color: #d99054; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -1001,12 +1004,13 @@ object {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
-.shop-category {
-  width: 23%;
-  padding: 1.5rem; }
-  .shop-category img {
-    width: 75px; }
+  .home-shop-flex-wrapper .shop-category {
+    width: 23%;
+    padding: 1.5rem; }
+    .home-shop-flex-wrapper .shop-category:hover {
+      border-color: #d99054; }
+    .home-shop-flex-wrapper .shop-category img {
+      width: 75px; }
 
 .home-journal-title-wrapper {
   position: relative;
@@ -1073,6 +1077,9 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   text-align: center; }
 
 /* Product Archive */
+body.tax-product-type .product-type-block-wrapper, body.post-type-archive-product .product-type-block-wrapper {
+  width: 10%; }
+
 body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product .product-type-flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1126,6 +1133,29 @@ body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product
           justify-content: space-between;
   padding: 10px; }
 
+.product-type-links {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .product-type-links a {
+    text-decoration: none; }
+
+/* Single Product Page */
+body.single-product article.type-product {
+  padding: 2.5rem 0 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+body.single-product .entry-content {
+  width: 50%;
+  margin: 0;
+  padding: 0 2rem; }
+
+body.single-product .single-product-price {
+  padding-bottom: 1rem; }
+
 .site-footer {
   background: url("../../images/dark-wood.png");
   height: 350px;
@@ -1145,7 +1175,7 @@ body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product
           justify-content: space-between; }
 
 .footer-content-container {
-  padding: 30px 60px 30px 0; }
+  padding: 60px 60px 30px 0; }
 
 .footer-image-container {
   -webkit-box-flex: 2;
@@ -1159,10 +1189,9 @@ body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product
           justify-content: flex-end;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding-top: 30px; }
+  padding-top: 60px; }
 
 .footer-image {
-  margin: 1em 0;
   background: url("../../images/inhabitent-logo-text.svg") no-repeat;
   background-size: contain;
   height: 100px;

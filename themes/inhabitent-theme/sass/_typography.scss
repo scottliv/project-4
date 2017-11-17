@@ -92,7 +92,7 @@ body {
 	margin: 2 * $base__space-unit 0;
 }
 
-.header-container {
+	.header-container, .single-product-price {
 	font-family: 'novecento-sans';
 }
 
@@ -133,5 +133,9 @@ body.home .home-journal-flex-wrapper {
 
 .page-title {
 	color: #000;
+}
+
+h1.single-product-title {
+	color: $color_brand_secondary;
 }
 
