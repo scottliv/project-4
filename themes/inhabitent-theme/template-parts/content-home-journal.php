@@ -24,7 +24,7 @@
 	  	<?php endif; ?>
 
 		  <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-			<?php echo sprintf('<a class="button-home-read-more" href="%s">', esc_url( get_permalink() ) ) . '<button>Read More</button></a>';?>
+			<?php echo sprintf('<a class="button-home-read-more btn-alt" href="%s">', esc_url( get_permalink() ) ) . '<button>Read More</button></a>';?>
      </div>
 	</header><!-- .entry-header -->
 

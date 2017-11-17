@@ -37,3 +37,24 @@
 	width: 100%;
 	height: 100%;
 }
+
+@mixin btn-main {
+		background: $color_brand_main;
+		color: #fff;
+		box-shadow: none;
+		text-shadow: none;
+		&:hover {
+			background: #19625d;
+		}
+}
+
+@mixin btn-alt {
+	background: transparent;
+	color: #000;
+	border: 1px solid #000;
+	&:hover {
+		background: $color_brand_main;
+		color: #fff;
+		box-shadow: none; 
+	}
+}
