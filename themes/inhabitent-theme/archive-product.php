@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<h1 class="page-title centered">Shop</h1>
 				<?php
 				$terms = get_terms( array(
 					'taxonomy' => 'product-type',
@@ -28,7 +28,7 @@ get_header(); ?>
 
 			
 				<?php $args = array( 'post_type' => 'product', 'posts_per_page' => -1 ); $query = new WP_Query( $args );?>
-					<div class="product-type-flex-wrapper">
+					<div class="product-type-flex-wrapper container">
 					<?php if ( $query->have_posts() ) : ?>
 						<?php if ( is_home() && ! is_front_page() ) : ?>
 							<header>

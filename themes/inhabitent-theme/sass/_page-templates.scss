@@ -50,18 +50,30 @@
   }
 }
 
-/* Pages with sidebar area */
-  body:not(.home):not(.page-template-about) .site-content{
-  display: flex;
-  justify-content: space-between;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding-top: 50px;
+/* pages without hero image*/
+
+body:not(.home):not(.page-template-about),
+{
+  .site-content{
+    padding-top: 50px;
+  }
 }
 
-  body:not(.home):not(.page-template-about) .content-area {
-  width: 60%;
+
+/* Pages with sidebar area */
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.single-adventure) 
+ {
+    .site-content{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1120px;
+      margin: 0 auto;
+  }
+  .content-area {
+    width: 60%;
+  }
 }
+
 
 .widget-area {
   width: 30%;
