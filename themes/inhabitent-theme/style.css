@@ -481,6 +481,7 @@ body {
 
 .footer-heading {
   font-weight: bold;
+  margin-bottom: 1rem;
   color: #d99054; }
 
 body.blog .entry-title a, body.blog .entry-title h1, body.single-post .entry-title a, body.single-post .entry-title h1 {
@@ -503,6 +504,15 @@ body.home .home-journal-flex-wrapper .entry-title {
 
 h1.single-product-title {
   color: #d99054; }
+
+.product-type-links {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .product-type-links a {
+    text-decoration: none;
+    font-family: 'novecento-sans', sans-serif; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -635,7 +645,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #248a83; }
+  color: #248a83;
+  text-decoration: none; }
   a:visited {
     color: #248a83; }
   a:hover, a:focus, a:active {
@@ -916,19 +927,29 @@ button {
   display: -ms-flexbox;
   display: flex; }
 
+.widget-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0; }
+
 span.widget-text {
-  width: 60%;
-  padding-left: 1.75rem; }
+  width: 70%;
+  padding: 0.5rem; }
 
 /* Business Hours */
 span.day-of-week {
   font-weight: bold; }
 
 /* Archives */
+.widget_archive .widget-title {
+  margin-bottom: 1rem; }
+
 aside.widget.widget_archive ul {
   list-style: none;
   margin-left: none;
   padding-left: none; }
+  aside.widget.widget_archive ul li {
+    padding: 5px 0; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1226,14 +1247,6 @@ body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px; }
-
-.product-type-links {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .product-type-links a {
-    text-decoration: none; }
 
 /* Single Product Page */
 body.single-product article.type-product {

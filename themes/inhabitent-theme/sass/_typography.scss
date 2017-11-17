@@ -104,6 +104,7 @@ body {
 
 .footer-heading {
 	font-weight: bold;
+	margin-bottom: 1rem;
 	color: #d99054;
 }
 
@@ -139,3 +140,11 @@ h1.single-product-title {
 	color: $color_brand_secondary;
 }
 
+.product-type-links {
+	a {
+		text-decoration: none;
+		font-family: 'novecento-sans', sans-serif;
+	}
+	text-align: center;
+	justify-content: center;
+}

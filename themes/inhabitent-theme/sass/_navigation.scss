@@ -6,6 +6,7 @@
 
 a {
 	color: $color_brand_main;
+	text-decoration: none;
 
 	&:visited {
 		color: $color_brand_main;
@@ -136,7 +137,6 @@ a {
 .menu-header-container ul li a {
 	padding: 15px 0 15px 30px;
 	text-transform: uppercase;
-	
 }
 
 .menu-container {

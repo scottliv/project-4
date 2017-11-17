@@ -22,9 +22,15 @@
 	display: flex;
 }
 
+.widget-title {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+}
+
 span.widget-text {
-	width: 60%;
-	padding-left: 1.75rem;
+	width: 70%;
+	padding: 0.5rem;
 }
 
 /* Business Hours */
@@ -35,8 +41,15 @@ span.day-of-week {
 
 /* Archives */
 
+.widget_archive .widget-title {
+	margin-bottom: 1rem;
+}
+
 aside.widget.widget_archive ul {
 	list-style: none;
 	margin-left: none;
 	padding-left: none;
+	li {
+		padding: 5px 0;
+	}
 }
