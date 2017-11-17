@@ -491,6 +491,9 @@ body.blog .entry-title a, body.blog .entry-title h1, body.single-post .entry-tit
 body.blog .entry-title .entry-meta, body.single-post .entry-title .entry-meta {
   color: #fff; }
 
+body.home .home-journal-flex-wrapper .entry-meta {
+  font-size: 0.75rem; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -745,8 +748,8 @@ button {
 
 .button-home-read-more {
   position: absolute;
-  bottom: 0;
-  left: 0; }
+  bottom: 15px;
+  left: 15px; }
   .button-home-read-more button {
     background: #fff;
     color: #248a83; }
@@ -990,7 +993,8 @@ object {
   border: 1px solid #e1e1e1;
   position: relative;
   border-top-width: 5px;
-  height: 175px; }
+  height: 175px;
+  padding: 15px; }
 
 .home-journal-flex-wrapper {
   display: -webkit-box;

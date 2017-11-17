@@ -16,6 +16,7 @@
 		<?php endif; ?>
 
     <div class="home-journal-title-wrapper">
+			
 	  	<?php if ( 'post' === get_post_type() ) : ?>  
 		    <div class="entry-meta">
 		    	<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
