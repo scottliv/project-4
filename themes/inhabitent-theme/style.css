@@ -523,6 +523,14 @@ h1.single-product-title {
     text-decoration: none;
     font-family: 'novecento-sans', sans-serif; }
 
+h2.comments-title {
+  font-size: 2rem;
+  font-weight: bold; }
+
+.comment-meta .comment-author cite {
+  font-style: normal;
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1001,6 +1009,23 @@ aside.widget.widget_archive ul {
 
 .bypostauthor {
   display: block; }
+
+.comments-area ol li article.comment-body {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1; }
+
+.comment-author-avatar {
+  padding-right: 1.5rem; }
+  .comment-author-avatar img {
+    border-radius: 50%; }
+
+.comment-metadata {
+  padding: 1rem 0;
+  color: #808080; }
 
 /* Blog Articles */
 body.blog article.type-post .entry-header, body.single-post article.type-post .entry-header, body.archive:not(.tax-product-type) article.type-post .entry-header {

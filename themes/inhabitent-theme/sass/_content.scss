@@ -48,6 +48,28 @@
 	display: block;
 }
 
+.comments-area {
+
+	 ol li article.comment-body {	
+		 margin: 2rem 0;
+		 padding: 2rem 0;
+		display: flex;
+		border-bottom: 1px solid #e1e1e1;
+			
+	}
+}
+
+.comment-author-avatar {
+	padding-right: 1.5rem;
+	img {
+		border-radius: 50%;
+	}
+}
+
+.comment-metadata {
+	padding: 1rem 0;
+	color: #808080;
+}
 /* Blog Articles */
 
 body.blog, body.single-post, body.archive:not(.tax-product-type) { 

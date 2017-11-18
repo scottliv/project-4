@@ -160,3 +160,13 @@ h1.single-product-title {
 	text-align: center;
 	justify-content: center;
 }
+
+h2.comments-title {
+	font-size: 2rem;
+	font-weight:bold;
+}
+
+.comment-meta .comment-author cite {
+	font-style: normal;
+	font-weight: bold;
+}
