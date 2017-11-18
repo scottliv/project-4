@@ -28,9 +28,14 @@
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		
 	</footer><!-- .entry-footer -->
+		<button class="btn-alt"><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+		<button class="btn-alt"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+		<button class="btn-alt"><i class="fa fa-pinterest" aria-hidden="true"></i>Pin</button>
 </article><!-- #post-## -->

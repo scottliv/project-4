@@ -91,7 +91,7 @@ get_header(); ?>
 					
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-							<?php get_template_part( 'template-parts/content-home-journal' ); ?>
+							<?php get_template_part( 'template-parts/content-home-adventures' ); ?>
 
 						<?php endwhile; ?>
 

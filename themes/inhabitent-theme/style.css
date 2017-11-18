@@ -1010,13 +1010,15 @@ aside.widget.widget_archive ul {
 .bypostauthor {
   display: block; }
 
-.comments-area ol li article.comment-body {
-  margin: 2rem 0;
-  padding: 2rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #e1e1e1; }
+.comments-area {
+  margin-top: 3rem; }
+  .comments-area ol li article.comment-body {
+    margin: 2rem 0;
+    padding: 0 0 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #e1e1e1; }
 
 .comment-author-avatar {
   padding-right: 1.5rem; }
@@ -1066,6 +1068,11 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta 
   body.single-post .entry-meta a,
   body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta a {
     color: #fff; }
+
+body.blog .entry-footer,
+body.single-post .entry-footer,
+body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-footer {
+  margin: 1rem 0; }
 
 /*--------------------------------------------------------------
 # Media

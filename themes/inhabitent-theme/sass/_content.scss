@@ -49,10 +49,10 @@
 }
 
 .comments-area {
-
+	margin-top: 3rem;
 	 ol li article.comment-body {	
 		 margin: 2rem 0;
-		 padding: 2rem 0;
+		 padding: 0 0 2rem 0;
 		display: flex;
 		border-bottom: 1px solid #e1e1e1;
 			
@@ -114,5 +114,9 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) {
 		a{
 			color: #fff;
 		}
+	}
+
+	.entry-footer {
+		margin: 1rem 0;
 	}
 }
