@@ -9,8 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container" role="main">
-			<h1 class="page-title centered"><?php single_cat_title()?></h1>
-			<div class="product-type-description centered"><?php the_archive_description() ?></div>
+			<div class="product-type-title-wrapper">
+				<h1 class="page-title centered"><?php single_cat_title()?></h1>
+				<div class="product-type-description centered"><?php the_archive_description() ?></div>
+			</div>
 		<div class="product-type-flex-wrapper">
 			<?php if ( have_posts() ) : ?>
 	

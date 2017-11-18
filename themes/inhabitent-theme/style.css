@@ -787,7 +787,8 @@ input.search-input:focus {
   position: fixed;
   height: 50px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.979)), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%, rgba(255, 255, 255, 0.8)); }
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.979) 0%, rgba(255, 255, 255, 0.8));
+  border-bottom: 1px solid #c8c8c8; }
 
 .header-container {
   display: -webkit-box;
@@ -1207,6 +1208,11 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
     text-align: center; }
 
 /* Product Archive */
+body.tax-product-type .product-type-title-wrapper, body.post-type-archive-product .product-type-title-wrapper {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3em;
+  padding: 3em 0; }
+
 body.tax-product-type .product-type-block-wrapper, body.post-type-archive-product .product-type-block-wrapper {
   width: 10%; }
 
