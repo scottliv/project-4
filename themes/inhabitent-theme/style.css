@@ -1049,30 +1049,27 @@ body.blog article.type-post .entry-header, body.single-post article.type-post .e
   position: relative;
   min-width: 640px; }
 
-body.blog h1,
-body.single-post h1,
-body.archive:not(.tax-product-type):not(.post-type-archive-product) h1 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.75em; }
-
 body.blog .entry-title,
 body.single-post .entry-title,
 body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title {
+  padding: 10px;
   width: 500px;
   background: #248a83;
   position: absolute;
-  top: 1.75em; }
+  top: 1.75rem;
+  color: #fff;
+  font-weight: bold; }
   body.blog .entry-title a,
   body.single-post .entry-title a,
   body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title a {
     color: #fff;
     font-weight: bold;
-    font-size: 1.75rem; }
+    font-size: 2rem; }
 
 body.blog .entry-meta,
 body.single-post .entry-meta,
 body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta {
+  padding: 5px;
   background: #248a83;
   font-family: 'novecento-sans';
   color: #fff;
@@ -1271,7 +1268,9 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   width: 60%; }
 
 .widget-area {
-  width: 30%; }
+  width: 30%;
+  padding-left: 3rem;
+  border-left: 1px solid #c8c8c8; }
 
 /* About Page */
 .page-template-about .entry-header {
