@@ -193,8 +193,11 @@ input.search-input:focus{
 	justify-content: space-between;
 }
 
-span.cat-links {
+	span.cat-links,
+span.tags-links {
 	padding-right: 10px;
+	text-transform: uppercase;
+	font-family: 'novecento-sans', sans-serif;
 }
 
 /* Buttons */

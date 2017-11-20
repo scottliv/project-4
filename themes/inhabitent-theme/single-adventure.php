@@ -1,7 +1,6 @@
-
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: About Page
  *
  * @package RED_Starter_Theme
  */
@@ -10,24 +9,26 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<article id="<?php the_ID(); ?>" <?php post_class();?>>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+					<header class="entry-header custom-hero">
+					</header>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+				<div class="container">
+					<div class="entry-content">
+							<?php the_title( '<h1 class="entry-title">', '</h1>');?>
+				
+							<?php
+								echo CFS()->get( 'adventure_content' );
+							?>
 
-			<?php the_post_navigation(); ?>
+				</div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // End of the loop. ?>
+			</article>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	
 
 <?php get_footer(); ?>

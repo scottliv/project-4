@@ -99,6 +99,9 @@ get_header(); ?>
 					<?php endif; ?>
 
 			</div>
+			<div class="adventure-button">
+				<a href="'./adventure' ?>"> <button>More Adventures</button> </a>
+			</div>
 		</section>
 		
 	

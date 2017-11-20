@@ -76,23 +76,19 @@ function inhabitent_dynamic_css() {
 add_action( 'wp_enqueue_scripts', 'inhabitent_dynamic_css');
 
 function inhabitent_adventures_css() {
-	if (! is_page_template('page-templates/adventure.php')){
-		return;
-	}
 
-	$image = CFS()->get( 'adventure_header_image' );
+	$image = CFS()->get( 'adventure_hero' );
 
 	if( ! $image ){
 		return;
 	}
 
-	$hero_css = ".page-template-about .entry-header {
+	$adventure_css = ".single-adventure article header.entry-header {
 		background:
-			linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
-			url({$image}) no-repeat center bottom;
-			background-size: cover, cover;
+			url({$image}) no-repeat center;
+			background-size: cover;
 	}";
-	wp_add_inline_style( 'red-starter-style', $hero_css); 
+	wp_add_inline_style( 'red-starter-style', $adventure_css); 
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_adventures_css');
 

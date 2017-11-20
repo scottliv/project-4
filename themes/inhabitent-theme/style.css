@@ -458,7 +458,8 @@ big {
   font-size: 125%; }
 
 body {
-  font-family: 'merriweather', serif; }
+  font-family: 'merriweather', serif;
+  line-height: 1.75rem; }
 
 body.page-template-about h2 {
   font-weight: bold;
@@ -509,7 +510,8 @@ body.home .home-journal-flex-wrapper .entry-title {
   font-weight: bold; }
 
 .page-title {
-  color: #000; }
+  margin: 1.75rem 0;
+  font-weight: bold; }
 
 h1.single-product-title {
   color: #d99054; }
@@ -806,33 +808,48 @@ input.search-input:focus {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-span.cat-links {
-  padding-right: 10px; }
+span.cat-links,
+span.tags-links {
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-family: 'novecento-sans', sans-serif; }
 
 /* Buttons */
 a.btn {
+  font-size: 1rem;
   background: #248a83;
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
+  padding: 0.75rem 2rem;
+  border-color: #248a83;
   text-decoration: none;
   font-size: 1rem;
   font-family: 'novecento-sans', sans-serif;
   padding: 0.75em 1.5em; }
   a.btn:hover {
-    background: #19625d; }
+    background: #19625d;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #19625d; }
 
 button {
   border-radius: 0;
   text-transform: uppercase;
+  font-size: 1rem;
   background: #248a83;
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  text-shadow: none; }
+  text-shadow: none;
+  padding: 0.75rem 2rem;
+  border-color: #248a83; }
   button:hover {
-    background: #19625d; }
+    background: #19625d;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #19625d; }
 
 .button-home-read-more {
   position: absolute;
@@ -842,7 +859,6 @@ button {
     background: transparent;
     color: #000;
     border: 1px solid #000;
-    padding: 0.75rem 2rem;
     font-size: 1rem; }
     .button-home-read-more button:hover {
       background: #248a83;
@@ -855,7 +871,6 @@ button {
   background: transparent;
   color: #000;
   border: 1px solid #000;
-  padding: 0.75rem 2rem;
   font-size: 1rem; }
   .btn-alt:hover {
     background: #248a83;
@@ -868,7 +883,6 @@ button {
   background: transparent;
   color: #000;
   border: 1px solid #000;
-  padding: 0.75rem 2rem;
   font-size: 1rem;
   color: #fff;
   border-color: #fff; }
@@ -1065,16 +1079,20 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title
     color: #fff;
     font-weight: bold;
     font-size: 2rem; }
+    body.blog .entry-title a:hover,
+    body.single-post .entry-title a:hover,
+    body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title a:hover {
+      color: #f0e4d1; }
 
 body.blog .entry-meta,
 body.single-post .entry-meta,
 body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta {
-  padding: 5px;
+  padding: 0 5px;
   background: #248a83;
   font-family: 'novecento-sans';
   color: #fff;
   position: absolute;
-  bottom: 0.375em;
+  bottom: 0.475em;
   right: 2em; }
   body.blog .entry-meta a,
   body.single-post .entry-meta a,
@@ -1245,9 +1263,23 @@ object {
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
+  .home-adventures-container h2 {
+    margin-bottom: 1rem; }
   .home-adventures-container a {
     font-size: 2rem;
     color: #fff; }
+    .home-adventures-container a:hover {
+      color: #f0e4d1; }
+
+div.adventure-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+  margin: 1rem 0 3rem 0; }
 
 /* pages without hero image*/
 body:not(.home):not(.page-template-about) .site-content {
@@ -1297,6 +1329,12 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   margin: 3rem auto; }
   .page-template-about .entry-content h2 {
     text-align: center; }
+
+/* Journal Archive */
+.archive .page-header {
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 1.75rem;
+  padding: 1.75rem 0; }
 
 /* Product Archive */
 body.tax-product-type .product-type-title-wrapper, body.post-type-archive-product .product-type-title-wrapper {
@@ -1378,6 +1416,14 @@ body.single-product .single-product-title {
 body.single-product .single-product-price {
   padding-bottom: 1rem;
   font-size: 1.5rem; }
+
+/* Single Adventure */
+.single-adventure .entry-header {
+  color: #fff;
+  height: 100vh; }
+  .single-adventure .entry-header .entry-title {
+    font-size: 3em;
+    font-weight: bold; }
 
 .site-footer {
   background: url("../../images/dark-wood.png");

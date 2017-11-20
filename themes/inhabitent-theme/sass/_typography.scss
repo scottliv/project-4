@@ -73,6 +73,7 @@ big {
 
 body {
 	font-family: 'merriweather', serif;
+	line-height: 1.75rem;
 }
 
 body.page-template-about h2 {
@@ -126,7 +127,6 @@ body.blog, body.single-post {
 			font-weight: bold;
 			font-size: 1.5em;
 			color: #fff;
-			
 		}
 		.entry-meta {
 			color: #fff;
@@ -145,7 +145,8 @@ body.home .home-journal-flex-wrapper {
 }
 
 .page-title {
-	color: #000;
+	margin: 1.75rem 0;
+	font-weight: bold;
 }
 
 h1.single-product-title {

@@ -100,15 +100,18 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) {
 				color: #fff;
 				font-weight: bold;
 				font-size: 2rem;
+				&:hover {
+					color: $color_link_hover;
+				}
 			}
 	}
 	.entry-meta{
-		padding: 5px;
+		padding: 0 5px;
 		background: $color_brand_main;
 		font-family: 'novecento-sans';
 		color: #fff;
 		position: absolute;
-		bottom: 0.375em;
+		bottom: 0.475em;
 		right: 2em;
 		a{
 			color: #fff;
