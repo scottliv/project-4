@@ -14,16 +14,25 @@ get_header(); ?>
 					<header class="entry-header custom-hero"></header>
 
 				<div class="container">
-
 					<div class="entry-content">
-							<?php the_title( '<h1 class="entry-title">', '</h1>');?>
-							 
-							<?php red_starter_posted_by(); ?>
-				
-							<?php
-								echo CFS()->get( 'adventure_content' );
-							?>
 
+						<?php the_title( '<h1 class="entry-title">', '</h1>');?>
+						<?php red_starter_posted_by(); ?>
+			
+						<?php
+							echo CFS()->get( 'adventure_content' );
+						?>
+						<a href="http://facebook.com">
+							<button class="btn-alt"><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+						</a>
+						<a href="http://twitter.com">
+							<button class="btn-alt"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+						</a>
+						<a href="http://pinterest.com">
+							<button class="btn-alt"><i class="fa fa-pinterest" aria-hidden="true"></i>Pin</button>
+						</a>
+						
+					</div>
 				</div>
 
 			</article>

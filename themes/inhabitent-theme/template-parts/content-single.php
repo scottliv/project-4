@@ -8,6 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -33,9 +34,15 @@
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
-		
 	</footer><!-- .entry-footer -->
+
+	<a href="http://facebook.com">
 		<button class="btn-alt"><i class="fa fa-facebook" aria-hidden="true"></i>Like</button>
+	</a>
+	<a href="http://twitter.com">
 		<button class="btn-alt"><i class="fa fa-twitter" aria-hidden="true"></i>Tweet</button>
+	</a>
+	<a href="http://pinterest.com">
 		<button class="btn-alt"><i class="fa fa-pinterest" aria-hidden="true"></i>Pin</button>
+	</a>
 </article><!-- #post-## -->
