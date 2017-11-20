@@ -864,6 +864,21 @@ button {
             box-shadow: none;
     border-color: #248a83; }
 
+.btn-white {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  border-color: #fff; }
+  .btn-white:hover {
+    background: #248a83;
+    color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #248a83; }
+
 .search-submit {
   border: none;
   background: transparent;
@@ -1191,6 +1206,51 @@ object {
       width: 100%;
       height: 15vw;
       overflow: hidden; }
+
+.home-adventures-grid-wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 0; }
+  .home-adventures-grid-wrapper article {
+    margin: none; }
+  .home-adventures-grid-wrapper article:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 3; }
+    .home-adventures-grid-wrapper article:first-child .home-adventures-image-container {
+      width: 100%;
+      height: 550px; }
+  .home-adventures-grid-wrapper article:nth-child(2n) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / 2; }
+  .home-adventures-grid-wrapper article:nth-child(3n) {
+    grid-column-start: 3 / 4;
+    grid-row-start: 2; }
+    .home-adventures-grid-wrapper article:nth-child(3n) a {
+      font-size: 1.5rem; }
+  .home-adventures-grid-wrapper article:nth-child(4n) {
+    grid-column: 4;
+    grid-row: 2; }
+    .home-adventures-grid-wrapper article:nth-child(4n) a {
+      font-size: 1.5rem; }
+
+.home-adventures-image-container {
+  padding: 3rem 1.75rem;
+  width: 100%;
+  height: 262px;
+  background-position: top;
+  background-size: contain; }
+
+.home-adventures-container {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .home-adventures-container a {
+    font-size: 2rem;
+    color: #fff; }
 
 /* pages without hero image*/
 body:not(.home):not(.page-template-about) .site-content {

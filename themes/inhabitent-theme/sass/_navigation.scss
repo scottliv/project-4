@@ -226,6 +226,12 @@ button {
 	@include btn-alt;
 }
 
+.btn-white {
+	 @include btn-alt;
+		color: #fff;
+		border-color: #fff;
+}
+
 .search-submit {
 	border: none;
 	background: transparent;
