@@ -479,7 +479,7 @@ body.page-template-about h2 {
 
 .section-header {
   font-size: 2.5em;
-  margin: 3rem 0; }
+  margin: 2rem 0 5rem 0; }
 
 .header-container, .single-product-price {
   font-family: 'novecento-sans'; }
@@ -1207,6 +1207,9 @@ object {
 /* Front page */
 .home-hero {
   height: 100vh; }
+
+body.home section {
+  margin-bottom: 4rem; }
 
 .home-hero-image {
   display: -webkit-box;
