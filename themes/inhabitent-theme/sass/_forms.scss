@@ -60,3 +60,23 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+form.wpcf7-form {
+	p label > * {
+		text-transform: uppercase;
+		font-family: 'novecento-sans', sans-serif;
+	}
+	.wpcf7-text, .wpcf7-textarea {
+		background: #f4f4f4;
+	}
+}
+
+input.wpcf7-submit {
+	@include btn-main;
+	border-radius: 0;
+}
+
+input.submit {
+	@include btn-main;
+	border-radius: 0;
+}

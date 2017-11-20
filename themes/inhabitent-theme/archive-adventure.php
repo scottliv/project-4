@@ -9,17 +9,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			
 				<?php $args = array( 'post_type' => 'adventure', 'posts_per_page' => -1 ); $query = new WP_Query( $args );?>
-					<div class="product-type-flex-wrapper container">
+					<header class="page-header centered">
+						<?php
+							the_archive_title( '<h1 class="page-title">', '</h1>' );
+							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+					</header><!-- .page-header -->
+				<div class="adventure-flex-wrapper container">
 					<?php if ( $query->have_posts() ) : ?>
-						<?php if ( is_home() && ! is_front_page() ) : ?>
-							<header>
-								<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-							</header>
-						<?php endif; ?>
-
 					
 						<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
