@@ -17,7 +17,6 @@ get_header(); ?>
 					<div class="entry-content">
 
 						<?php the_title( '<h1 class="entry-title">', '</h1>');?>
-						<?php red_starter_posted_by(); ?>
 			
 						<?php
 							echo CFS()->get( 'adventure_content' );
