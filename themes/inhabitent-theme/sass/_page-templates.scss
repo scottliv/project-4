@@ -138,7 +138,7 @@ body:not(.home):not(.page-template-about),
 }
 
 /* Pages with sidebar area */
-body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.single-adventure) 
+body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.single-adventure):not(.tax-product-type) 
  {
     .site-content{
       display: flex;
@@ -233,6 +233,7 @@ body.tax-product-type, body.post-type-archive-product{
 
 .dots {
   width: 100%;
+  max-width: 300px;
   z-index: -1;
   position: absolute;
 }
