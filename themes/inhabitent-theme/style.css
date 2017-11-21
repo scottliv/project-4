@@ -683,6 +683,35 @@ form.wpcf7-form p label > * {
 form.wpcf7-form .wpcf7-text, form.wpcf7-form .wpcf7-textarea {
   background: #f4f4f4; }
 
+form.comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  form.comment-form p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+p.comment-form-comment {
+  width: 100%; }
+
+p.comment-form-author, p.comment-form-email {
+  width: 49%; }
+
+p.comment-form-url {
+  width: 100%; }
+  p.comment-form-url input[type="url"] {
+    width: 100%; }
+
 form.comment-form textarea,
 form.comment-form input[type="text"],
 form.comment-form input[type="email"],
