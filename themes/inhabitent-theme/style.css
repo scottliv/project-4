@@ -475,6 +475,7 @@ body.page-template-about h2 {
   font-size: 2.25rem; }
 
 .find-us-header {
+  line-height: 1.4;
   font-size: 1.85rem;
   margin: 2rem 0; }
   .find-us-header:first-child {
@@ -496,13 +497,17 @@ body.page-template-about h2 {
 .header-container, .single-product-price {
   font-family: 'novecento-sans'; }
 
-.entry-title a {
-  text-decoration: none; }
+.entry-title {
+  letter-spacing: 2px; }
+  .entry-title a {
+    text-decoration: none; }
 
 .footer-heading {
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #d99054; }
+  color: #d99054;
+  font-size: 1.25rem;
+  letter-spacing: 2px; }
 
 body.blog .entry-title a, body.blog .entry-title h1, body.single-post .entry-title a, body.single-post .entry-title h1 {
   font-weight: bold;
@@ -1036,7 +1041,8 @@ button {
 .widget-title {
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 1.5rem 0; }
+  margin: 1.5rem 0;
+  letter-spacing: 2px; }
 
 span.widget-text {
   width: 70%;
@@ -1119,6 +1125,11 @@ body.blog article.type-post .entry-header, body.single-post article.type-post .e
   position: relative;
   min-width: 640px; }
 
+body.blog .entry-header img,
+body.single-post .entry-header img,
+body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-header img {
+  width: 870px; }
+
 body.blog .entry-title,
 body.single-post .entry-title,
 body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title {
@@ -1128,7 +1139,8 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title
   position: absolute;
   top: 1.75rem;
   color: #fff;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1.4; }
   body.blog .entry-title a,
   body.single-post .entry-title a,
   body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-title a {
@@ -1148,8 +1160,8 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta 
   font-family: 'novecento-sans';
   color: #fff;
   position: absolute;
-  bottom: 0.475rem;
-  right: 6rem; }
+  bottom: 0.5rem;
+  right: 0; }
   body.blog .entry-meta a,
   body.single-post .entry-meta a,
   body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta a {
@@ -1360,10 +1372,10 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
 
 body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.single-adventure):not(.tax-product-type) .content-area {
   padding: 3rem 3rem 0 0;
-  width: 70%; }
+  width: 72%; }
 
 .widget-area {
-  width: 30%;
+  width: 28%;
   padding-left: 3rem;
   border-left: 1px solid #c8c8c8; }
 

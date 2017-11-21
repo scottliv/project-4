@@ -97,6 +97,7 @@ body.page-template-about h2 {
 	&:first-child {
 		padding-top: 3rem;
 	}
+	line-height: 1.4;
 	font-size: 1.85rem;
 	margin: 2rem 0;
 }
@@ -123,6 +124,7 @@ body.page-template-about h2 {
 }
 
 .entry-title {
+	letter-spacing: 2px;
 	a {
 		text-decoration: none;
 	}
@@ -132,6 +134,8 @@ body.page-template-about h2 {
 	font-weight: bold;
 	margin-bottom: 1rem;
 	color: #d99054;
+	font-size: 1.25rem;
+	letter-spacing: 2px;
 }
 
 body.blog, body.single-post {
