@@ -509,7 +509,8 @@ body.home .home-journal-flex-wrapper .entry-title {
 
 .page-title {
   margin: 1.75rem 0;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 2.5rem; }
 
 h1.single-product-title {
   color: #d99054; }
@@ -1380,7 +1381,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
 body.tax-product-type .product-type-title-wrapper, body.post-type-archive-product .product-type-title-wrapper {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 3em;
-  padding: 3em 0; }
+  padding: 1.75em 0; }
 
 body.tax-product-type .product-type-block-wrapper, body.post-type-archive-product .product-type-block-wrapper {
   width: 10%; }
