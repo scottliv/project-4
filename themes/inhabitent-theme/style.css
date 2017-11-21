@@ -462,11 +462,22 @@ body {
 body.page-template-about h2 {
   font-weight: bold;
   font-size: 2rem;
-  margin: 1.5rem; }
+  margin: 1.75rem;
+  letter-spacing: 2px; }
+
+.page-id-22 .entry-title,
+.find-us-header {
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.page-id-22 .entry-title {
+  font-size: 2.25rem; }
 
 .find-us-header {
-  padding: 1.5rem 0;
-  font-size: 1.75rem; }
+  font-size: 1.85rem;
+  margin: 2rem 0; }
+  .find-us-header:first-child {
+    padding-top: 3rem; }
 
 .bold {
   font-weight: bold; }
@@ -663,6 +674,12 @@ form.wpcf7-form p label > * {
   font-family: 'novecento-sans', sans-serif; }
 
 form.wpcf7-form .wpcf7-text, form.wpcf7-form .wpcf7-textarea {
+  background: #f4f4f4; }
+
+form.comment-form textarea,
+form.comment-form input[type="text"],
+form.comment-form input[type="email"],
+form.comment-form input[type="url"] {
   background: #f4f4f4; }
 
 input.wpcf7-submit {
@@ -1130,8 +1147,8 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta 
   font-family: 'novecento-sans';
   color: #fff;
   position: absolute;
-  bottom: 0.475em;
-  right: 2em; }
+  bottom: 0.475rem;
+  right: 6rem; }
   body.blog .entry-meta a,
   body.single-post .entry-meta a,
   body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-meta a {
@@ -1141,6 +1158,9 @@ body.blog .entry-footer,
 body.single-post .entry-footer,
 body.archive:not(.tax-product-type):not(.post-type-archive-product) .entry-footer {
   margin: 1rem 0; }
+
+#wpgmza_map {
+  margin-bottom: 3rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1338,7 +1358,8 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
   margin: 0 auto; }
 
 body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-archive):not(.single-adventure) .content-area {
-  width: 60%; }
+  padding: 3rem 3rem 0 0;
+  width: 70%; }
 
 .widget-area {
   width: 30%;

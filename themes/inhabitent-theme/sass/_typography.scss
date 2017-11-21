@@ -80,13 +80,24 @@ body {
 body.page-template-about h2 {
 	font-weight: bold;
 	font-size: 2rem;
-	margin: 1.5rem;
+	margin: 1.75rem;
+	letter-spacing: 2px;
 }
 
-.find-us-header{
-	padding: 1.5rem 0;
-	font-size: 1.75rem;
-	
+.page-id-22 .entry-title,	
+.find-us-header {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.page-id-22 .entry-title {
+	font-size: 2.25rem;	
+}
+.find-us-header {
+	&:first-child {
+		padding-top: 3rem;
+	}
+	font-size: 1.85rem;
+	margin: 2rem 0;
 }
 
 .bold {

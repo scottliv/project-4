@@ -111,8 +111,8 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) {
 		font-family: 'novecento-sans';
 		color: #fff;
 		position: absolute;
-		bottom: 0.475em;
-		right: 2em;
+		bottom: 0.475rem;
+		right: 6rem;
 		a{
 			color: #fff;
 		}
@@ -121,4 +121,8 @@ body.archive:not(.tax-product-type):not(.post-type-archive-product) {
 	.entry-footer {
 		margin: 1rem 0;
 	}
+}
+
+		#wpgmza_map {
+	margin-bottom: 3rem;
 }

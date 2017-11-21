@@ -71,6 +71,15 @@ form.wpcf7-form {
 	}
 }
 
+form.comment-form {
+	textarea,
+	input[type="text"],
+	input[type="email"],
+	input[type="url"] {
+		background: #f4f4f4;
+	}
+}
+
 input.wpcf7-submit {
 	@include btn-main;
 	border-radius: 0;
