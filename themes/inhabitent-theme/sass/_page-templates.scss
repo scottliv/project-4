@@ -135,7 +135,7 @@ div.adventure-button {
 
 /* pages without hero image*/
 
-body:not(.home):not(.page-template-about),
+body:not(.home):not(.page-template-about):not(.single-adventure),
 {
   .site-content{
     padding-top: 50px;
@@ -159,7 +159,7 @@ body:not(.home):not(.page-template-about):not(.single-product):not(.post-type-ar
 .widget-area {
   width: 28%;
   padding-left: 3rem;
-  border-left: 1px solid #c8c8c8;
+  border-left: $border-main;
 }
 
 /* About Page */

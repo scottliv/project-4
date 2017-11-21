@@ -414,6 +414,56 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: normal;
   text-transform: uppercase; }
 
+body.page-template-about h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1.75rem;
+  letter-spacing: 2px; }
+
+.page-id-22 .entry-title,
+.find-us-header {
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.page-id-22 .entry-title {
+  margin-top: 0;
+  font-size: 2.25rem; }
+
+.find-us-header {
+  line-height: 1.4;
+  font-size: 1.85rem;
+  margin: 2rem 0; }
+  .find-us-header:first-child {
+    padding-top: 3rem; }
+
+.section-header {
+  font-size: 2.5em;
+  margin: 2rem 0 5rem 0; }
+
+.header-container,
+.single-product-price {
+  font-family: 'novecento-sans'; }
+
+.entry-title {
+  letter-spacing: 2px; }
+  .entry-title a {
+    text-decoration: none; }
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d99054;
+  font-size: 1.25rem;
+  letter-spacing: 2px; }
+
+.page-title {
+  margin: 1.75rem 0;
+  font-weight: bold;
+  font-size: 2.5rem; }
+
+h1.single-product-title {
+  color: #d99054; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -459,28 +509,6 @@ body {
   line-height: 1.75rem;
   font-size: 16px; }
 
-body.page-template-about h2 {
-  font-weight: bold;
-  font-size: 2rem;
-  margin: 1.75rem;
-  letter-spacing: 2px; }
-
-.page-id-22 .entry-title,
-.find-us-header {
-  font-weight: bold;
-  letter-spacing: 2px; }
-
-.page-id-22 .entry-title {
-  margin-top: 0;
-  font-size: 2.25rem; }
-
-.find-us-header {
-  line-height: 1.4;
-  font-size: 1.85rem;
-  margin: 2rem 0; }
-  .find-us-header:first-child {
-    padding-top: 3rem; }
-
 .bold {
   font-weight: bold; }
 
@@ -489,25 +517,6 @@ body.page-template-about h2 {
 
 .capitalize {
   text-transform: uppercase; }
-
-.section-header {
-  font-size: 2.5em;
-  margin: 2rem 0 5rem 0; }
-
-.header-container, .single-product-price {
-  font-family: 'novecento-sans'; }
-
-.entry-title {
-  letter-spacing: 2px; }
-  .entry-title a {
-    text-decoration: none; }
-
-.footer-heading {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #d99054;
-  font-size: 1.25rem;
-  letter-spacing: 2px; }
 
 body.blog .entry-title a, body.blog .entry-title h1, body.single-post .entry-title a, body.single-post .entry-title h1 {
   font-weight: bold;
@@ -523,14 +532,6 @@ body.home .home-journal-flex-wrapper .entry-meta {
 body.home .home-journal-flex-wrapper .entry-title {
   font-size: 1.25rem;
   font-weight: bold; }
-
-.page-title {
-  margin: 1.75rem 0;
-  font-weight: bold;
-  font-size: 2.5rem; }
-
-h1.single-product-title {
-  color: #d99054; }
 
 .product-type-links {
   text-align: center;
@@ -1045,8 +1046,13 @@ button {
   letter-spacing: 2px; }
 
 span.widget-text {
-  width: 70%;
-  padding: 0.5rem; }
+  width: 80%; }
+
+.widget i {
+  line-height: 1.75;
+  padding: 0;
+  margin-right: 0.5rem;
+  width: 20px; }
 
 /* Business Hours */
 span.day-of-week {
@@ -1357,7 +1363,7 @@ div.adventure-button {
   margin: 1rem 0 3rem 0; }
 
 /* pages without hero image*/
-body:not(.home):not(.page-template-about) .site-content {
+body:not(.home):not(.page-template-about):not(.single-adventure) .site-content {
   padding-top: 50px; }
 
 /* Pages with sidebar area */

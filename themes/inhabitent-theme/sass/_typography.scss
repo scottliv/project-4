@@ -22,6 +22,67 @@ body{
 		text-transform: uppercase;
 	}
 }
+body.page-template-about h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 1.75rem;
+	letter-spacing: 2px;
+}
+
+.page-id-22 .entry-title,
+.find-us-header {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.page-id-22 .entry-title {
+	margin-top: 0;
+	font-size: 2.25rem;
+}
+
+.find-us-header {
+	&:first-child {
+		padding-top: 3rem;
+	}
+	line-height: 1.4;
+	font-size: 1.85rem;
+	margin: 2rem 0;
+}
+
+.section-header {
+	font-size: 2.5em;
+	margin: 2rem 0 5rem 0;
+}
+
+.header-container,
+.single-product-price {
+	font-family: 'novecento-sans';
+}
+
+.entry-title {
+	letter-spacing: 2px;
+	a {
+		text-decoration: none;
+	}
+}
+
+.footer-heading {
+	font-weight: bold;
+	margin-bottom: 1rem;
+	color: #d99054;
+	font-size: 1.25rem;
+	letter-spacing: 2px;
+}
+
+.page-title {
+	margin: 1.75rem 0;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+h1.single-product-title {
+	color: $color_brand_secondary;
+}
 
 /* Copy */
 
@@ -77,31 +138,6 @@ body {
 	font-size: 16px;
 }
 
-body.page-template-about h2 {
-	font-weight: bold;
-	font-size: 2rem;
-	margin: 1.75rem;
-	letter-spacing: 2px;
-}
-
-.page-id-22 .entry-title,	
-.find-us-header {
-	font-weight: bold;
-	letter-spacing: 2px;
-}
-.page-id-22 .entry-title {
-	margin-top: 0;
-	font-size: 2.25rem;	
-}
-.find-us-header {
-	&:first-child {
-		padding-top: 3rem;
-	}
-	line-height: 1.4;
-	font-size: 1.85rem;
-	margin: 2rem 0;
-}
-
 .bold {
 	font-weight: bold;
 }
@@ -112,30 +148,6 @@ body.page-template-about h2 {
 
 .capitalize {
 	text-transform: uppercase;
-}
-
-.section-header {
-	font-size: 2.5em;
-	margin: 2rem 0 5rem 0;
-}
-
-	.header-container, .single-product-price {
-	font-family: 'novecento-sans';
-}
-
-.entry-title {
-	letter-spacing: 2px;
-	a {
-		text-decoration: none;
-	}
-}
-
-.footer-heading {
-	font-weight: bold;
-	margin-bottom: 1rem;
-	color: #d99054;
-	font-size: 1.25rem;
-	letter-spacing: 2px;
 }
 
 body.blog, body.single-post {
@@ -159,16 +171,6 @@ body.home .home-journal-flex-wrapper {
 		font-size: 1.25rem;
 		font-weight: bold;
 	}
-}
-
-.page-title {
-	margin: 1.75rem 0;
-	font-weight: bold;
-	font-size: 2.5rem;
-}
-
-h1.single-product-title {
-	color: $color_brand_secondary;
 }
 
 .product-type-links {
