@@ -198,7 +198,9 @@ body.tax-product-type, body.post-type-archive-product{
     padding: 1.75em 0;
   }
   .product-type-block-wrapper {
-    width: 10%;
+    width: 100px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
   }
   .product-type-flex-wrapper {
     display: flex;

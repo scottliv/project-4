@@ -1384,7 +1384,9 @@ body.tax-product-type .product-type-title-wrapper, body.post-type-archive-produc
   padding: 1.75em 0; }
 
 body.tax-product-type .product-type-block-wrapper, body.post-type-archive-product .product-type-block-wrapper {
-  width: 10%; }
+  width: 100px;
+  font-size: 1.3rem;
+  text-transform: uppercase; }
 
 body.tax-product-type .product-type-flex-wrapper, body.post-type-archive-product .product-type-flex-wrapper {
   display: -webkit-box;
