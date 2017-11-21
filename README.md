@@ -1,4 +1,4 @@
-![Alt text](/screenshot.png?raw=true "Inhabitent Screenshot")
+
 
 # Inhabitent 
 
