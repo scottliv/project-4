@@ -5,8 +5,8 @@
     e.stopPropagation();
     $('.search-input').toggleClass('show');
     setTimeout(function(){
-      $('.search-input').focus()}, 201);
-    
+      $('.search-input').focus()
+    }, 201);
 
     $(document).one('click', function closeSearch(e) {
       if ($('#search').has(e.target).length === 0) {
@@ -17,5 +17,4 @@
     });
   });  
 
-  
 })(jQuery);
