@@ -92,4 +92,15 @@ function inhabitent_adventures_css() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_adventures_css');
 
+function inhabitent_archive_title ( $title ) {
+	if ( is_post_type_archive( 'product' ) ) {
+		$title = 'Shop Stuff';
+	} elseif ( is_post_type_archive( 'adventure' ) ) {
+		$title = 'Latest Adventures';
+	}
+	return $title;
+}
+
+add_filter( 'get_the_archive_title', 'inhabitent_archive_title' );
+
 
