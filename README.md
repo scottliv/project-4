@@ -1,5 +1,5 @@
 
-
+![Alt text](/screenshot.png?raw=true "Inhabitent Screenshot")
 # Inhabitent 
 
 A website built using wordpress as a content management system, with a custom theme and functionality.
@@ -15,7 +15,6 @@ Working on a larger project taught me the value of sass and writing reusable sty
 ## Acknowlegments
 
 This theme was built on a red academy starter theme similar to _s (https://underscores.me/)
-
 ## Author
 
 Scott Livingstone
