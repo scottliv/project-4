@@ -1,5 +1,5 @@
 
-![Alt text](/screenshot.png?raw=true "Inhabitent Screenshot")
+![Screenshot](/screenshot.png?raw=true "Inhabitent Screenshot")
 # Inhabitent 
 
 A website built using wordpress as a content management system, with a custom theme and functionality.
