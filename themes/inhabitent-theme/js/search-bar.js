@@ -1,6 +1,6 @@
 (function($){
   
-  $('.search-submit').click(function(e){
+  $('.nav-search-button').click(function(e){
     e.preventDefault();
     e.stopPropagation();
     $('.search-input').toggleClass('show');

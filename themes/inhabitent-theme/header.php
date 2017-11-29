@@ -34,7 +34,7 @@
 					</nav><!-- #site-navigation -->
 					<div class="search-bar">
 							<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>"><input class="search-input" type="text" name="s" id="search" placeholder="Type and hit enter"></form>
-							<button class="search-submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+							<button class="search-submit nav-search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
 						</div>
 					</div>
 				</div>
