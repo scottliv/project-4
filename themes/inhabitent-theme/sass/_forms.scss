@@ -54,11 +54,18 @@ input[type="url"],
 input[type="password"],
 input[type="search"] {
 	padding: 3px;
+	margin-top: 0.5rem;
 }
 
 textarea {
 	padding-left: 3px;
 	width: 100%;
+	margin-top: 0.5rem;
+}
+
+label {
+	font-family: 'novecento-sans', sans-serif;
+	text-transform: uppercase;
 }
 
 form.wpcf7-form {
