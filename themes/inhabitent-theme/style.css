@@ -812,14 +812,14 @@ input.submit {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:not(.btn):not(.adventure-link):not(.footer-link) {
+a {
   color: #248a83;
   text-decoration: none; }
-  a:not(.btn):not(.adventure-link):not(.footer-link):hover, a:not(.btn):not(.adventure-link):not(.footer-link):focus, a:not(.btn):not(.adventure-link):not(.footer-link):active {
+  a:hover, a:focus, a:active {
     color: #2f1339; }
-  a:not(.btn):not(.adventure-link):not(.footer-link):focus {
+  a:focus {
     outline: thin dotted; }
-  a:not(.btn):not(.adventure-link):not(.footer-link):hover, a:not(.btn):not(.adventure-link):not(.footer-link):active {
+  a:hover, a:active {
     outline: 0; }
 
 /* Menus */

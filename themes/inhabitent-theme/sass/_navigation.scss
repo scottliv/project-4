@@ -4,9 +4,10 @@
 
 /* Links */
 
-a:not(.btn):not(.adventure-link):not(.footer-link) {
+a {
 	color: $color_brand_main;
 	text-decoration: none;
+
 	&:hover,
 	&:focus,
 	&:active {
