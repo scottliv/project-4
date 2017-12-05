@@ -21,8 +21,8 @@
 
     	<header class="entry-header">
         <div class="home-adventures-container">
-		      <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-          <?php echo sprintf('<a href="%s">', esc_url( get_permalink() ) ) . '<button class="btn-white">Read More</button></a>';?>
+		      <?php the_title( sprintf( '<h2 class="entry-title"><a class="adventure-link" href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+          <?php echo sprintf('<a class="adventure-link" href="%s">', esc_url( get_permalink() ) ) . '<button class="btn-white">Read More</button></a>';?>
         </div>
       </header><!-- .entry-header -->
 

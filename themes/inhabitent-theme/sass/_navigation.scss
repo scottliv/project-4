@@ -4,7 +4,7 @@
 
 /* Links */
 
-a {
+a:not(.btn):not(.adventure-link) {
 	color: $color_brand_main;
 	text-decoration: none;
 
