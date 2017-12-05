@@ -812,16 +812,14 @@ input.submit {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:not(.btn):not(.adventure-link) {
+a:not(.btn):not(.adventure-link):not(.footer-link) {
   color: #248a83;
   text-decoration: none; }
-  a:not(.btn):not(.adventure-link):visited {
-    color: #248a83; }
-  a:not(.btn):not(.adventure-link):hover, a:not(.btn):not(.adventure-link):focus, a:not(.btn):not(.adventure-link):active {
+  a:not(.btn):not(.adventure-link):not(.footer-link):hover, a:not(.btn):not(.adventure-link):not(.footer-link):focus, a:not(.btn):not(.adventure-link):not(.footer-link):active {
     color: #2f1339; }
-  a:not(.btn):not(.adventure-link):focus {
+  a:not(.btn):not(.adventure-link):not(.footer-link):focus {
     outline: thin dotted; }
-  a:not(.btn):not(.adventure-link):hover, a:not(.btn):not(.adventure-link):active {
+  a:not(.btn):not(.adventure-link):not(.footer-link):hover, a:not(.btn):not(.adventure-link):not(.footer-link):active {
     outline: 0; }
 
 /* Menus */

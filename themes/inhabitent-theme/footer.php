@@ -16,11 +16,11 @@
 						<h3 class="footer-heading">Contact Info</h3>
 						<p>
 							<i class="fa fa-envelope" aria-hidden="true"></i>
-							<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
+							<a class="footer-link" href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 						</p>
 						<p>
 							<i class="fa fa-phone" aria-hidden="true"></i>
-							<a href="tel:778-456-7891">778-456-7891</a>
+							<a class="footer-link" href="tel:778-456-7891">778-456-7891</a>
 						</p>
 						<p class="social-icons">
 							<i class="fa fa-facebook-square" aria-hidden="true"></i>
